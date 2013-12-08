@@ -21,6 +21,8 @@
 		2CAFACC61855341B005407DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAFACA81855341B005407DE /* UIKit.framework */; };
 		2CAFACCE1855341B005407DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CAFACCC1855341B005407DE /* InfoPlist.strings */; };
 		2CAFACD01855341B005407DE /* MuteDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAFACCF1855341B005407DE /* MuteDetectorTests.m */; };
+		2CAFACDA18553580005407DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAFACD91855357F005407DE /* AVFoundation.framework */; };
+		2CAFACDE18553629005407DE /* silence10s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CAFACDD18553629005407DE /* silence10s.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2CAFACCB1855341B005407DE /* MuteDetectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MuteDetectorTests-Info.plist"; sourceTree = "<group>"; };
 		2CAFACCD1855341B005407DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CAFACCF1855341B005407DE /* MuteDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuteDetectorTests.m; sourceTree = "<group>"; };
+		2CAFACD91855357F005407DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2CAFACDD18553629005407DE /* silence10s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence10s.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAFACDA18553580005407DE /* AVFoundation.framework in Frameworks */,
 				2CAFACA71855341B005407DE /* CoreGraphics.framework in Frameworks */,
 				2CAFACA91855341B005407DE /* UIKit.framework in Frameworks */,
 				2CAFACA51855341B005407DE /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		2CAFACA31855341B005407DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CAFACD91855357F005407DE /* AVFoundation.framework */,
 				2CAFACA41855341B005407DE /* Foundation.framework */,
 				2CAFACA61855341B005407DE /* CoreGraphics.framework */,
 				2CAFACA81855341B005407DE /* UIKit.framework */,
@@ -112,6 +118,7 @@
 		2CAFACAA1855341B005407DE /* MuteDetector */ = {
 			isa = PBXGroup;
 			children = (
+				2CAFACDD18553629005407DE /* silence10s.mp3 */,
 				2CAFACB31855341B005407DE /* SKAppDelegate.h */,
 				2CAFACB41855341B005407DE /* SKAppDelegate.m */,
 				2CAFACB61855341B005407DE /* Main.storyboard */,
@@ -232,6 +239,7 @@
 				2CAFACBD1855341B005407DE /* Images.xcassets in Resources */,
 				2CAFACAF1855341B005407DE /* InfoPlist.strings in Resources */,
 				2CAFACB81855341B005407DE /* Main.storyboard in Resources */,
+				2CAFACDE18553629005407DE /* silence10s.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
