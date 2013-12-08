@@ -10,4 +10,6 @@
 
 @interface SKViewController : UIViewController
 
+- (IBAction)checkButton:(id)sender;
+
 @end
