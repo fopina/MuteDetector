@@ -12,6 +12,7 @@ Usage
 
 * Add _SKMuteSwitchDetector.h_ and _SKMuteSwitchDetector.m_ to your project
 * Import _SKMuteSwitchDetector.h_ in your class and use it as simply as (taken from this demo project _SKViewController.m_):
+
 ```objective-c
     [SKMuteSwitchDetector checkSwitch:^(BOOL success, BOOL silent) {
         NSString *message;
