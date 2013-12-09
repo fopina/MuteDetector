@@ -10,7 +10,8 @@ This is simply a small redesign of the Moshe's solution to make it easily usable
 Usage
 ---
 
-* Add _SKMuteSwitchDetector.h_ and _SKMuteSwitchDetector.m_ to your project
+* Add _SKMuteSwitchDetector.h, SKMuteSwitchDetector.m and mute.caf_ to your project
+* Add _AVFoundation.framework_ to your project
 * Import _SKMuteSwitchDetector.h_ in your class and use it as simply as (taken from this demo project _SKViewController.m_):
 
 ```objective-c
