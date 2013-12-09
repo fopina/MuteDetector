@@ -22,7 +22,8 @@
 		2CAFACCE1855341B005407DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CAFACCC1855341B005407DE /* InfoPlist.strings */; };
 		2CAFACD01855341B005407DE /* MuteDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAFACCF1855341B005407DE /* MuteDetectorTests.m */; };
 		2CAFACDA18553580005407DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAFACD91855357F005407DE /* AVFoundation.framework */; };
-		2CAFACDE18553629005407DE /* silence10s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CAFACDD18553629005407DE /* silence10s.mp3 */; };
+		2CAFACE1185536DE005407DE /* SKMuteSwitchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAFACE0185536DE005407DE /* SKMuteSwitchDetector.m */; };
+		2CAFACE318553A2D005407DE /* mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAFACE218553A2D005407DE /* mute.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,9 @@
 		2CAFACCD1855341B005407DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CAFACCF1855341B005407DE /* MuteDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuteDetectorTests.m; sourceTree = "<group>"; };
 		2CAFACD91855357F005407DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		2CAFACDD18553629005407DE /* silence10s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence10s.mp3; sourceTree = "<group>"; };
+		2CAFACDF185536DE005407DE /* SKMuteSwitchDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMuteSwitchDetector.h; sourceTree = "<group>"; };
+		2CAFACE0185536DE005407DE /* SKMuteSwitchDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMuteSwitchDetector.m; sourceTree = "<group>"; };
+		2CAFACE218553A2D005407DE /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mute.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +121,9 @@
 		2CAFACAA1855341B005407DE /* MuteDetector */ = {
 			isa = PBXGroup;
 			children = (
-				2CAFACDD18553629005407DE /* silence10s.mp3 */,
+				2CAFACE218553A2D005407DE /* mute.caf */,
+				2CAFACDF185536DE005407DE /* SKMuteSwitchDetector.h */,
+				2CAFACE0185536DE005407DE /* SKMuteSwitchDetector.m */,
 				2CAFACB31855341B005407DE /* SKAppDelegate.h */,
 				2CAFACB41855341B005407DE /* SKAppDelegate.m */,
 				2CAFACB61855341B005407DE /* Main.storyboard */,
@@ -239,7 +244,7 @@
 				2CAFACBD1855341B005407DE /* Images.xcassets in Resources */,
 				2CAFACAF1855341B005407DE /* InfoPlist.strings in Resources */,
 				2CAFACB81855341B005407DE /* Main.storyboard in Resources */,
-				2CAFACDE18553629005407DE /* silence10s.mp3 in Resources */,
+				2CAFACE318553A2D005407DE /* mute.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAFACE1185536DE005407DE /* SKMuteSwitchDetector.m in Sources */,
 				2CAFACB51855341B005407DE /* SKAppDelegate.m in Sources */,
 				2CAFACBB1855341B005407DE /* SKViewController.m in Sources */,
 				2CAFACB11855341B005407DE /* main.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "SKViewController.h"
+#import "SKMuteSwitchDetector.h"
 
 @interface SKViewController ()
 
@@ -15,8 +16,16 @@
 @implementation SKViewController
 
 - (IBAction)checkButton:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Test" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
+    [SKMuteSwitchDetector checkSwitch:^(BOOL success, BOOL silent) {
+        NSString *message;
+        if (success) {
+            message = [NSString stringWithFormat:@"Mute switch is %@", silent ? @"ON" : @"OFF"];
+        }
+        else {
+            message = @"Failed to detect mute switch state";
+        }
+        [[[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }];
 }
 
 @end
