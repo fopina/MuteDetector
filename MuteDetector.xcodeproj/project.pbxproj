@@ -23,7 +23,6 @@
 		2CAFACD01855341B005407DE /* MuteDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAFACCF1855341B005407DE /* MuteDetectorTests.m */; };
 		2CAFACDA18553580005407DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CAFACD91855357F005407DE /* AVFoundation.framework */; };
 		2CAFACE1185536DE005407DE /* SKMuteSwitchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAFACE0185536DE005407DE /* SKMuteSwitchDetector.m */; };
-		2CAFACE318553A2D005407DE /* mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAFACE218553A2D005407DE /* mute.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +58,6 @@
 		2CAFACD91855357F005407DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2CAFACDF185536DE005407DE /* SKMuteSwitchDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMuteSwitchDetector.h; sourceTree = "<group>"; };
 		2CAFACE0185536DE005407DE /* SKMuteSwitchDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMuteSwitchDetector.m; sourceTree = "<group>"; };
-		2CAFACE218553A2D005407DE /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mute.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +119,6 @@
 		2CAFACAA1855341B005407DE /* MuteDetector */ = {
 			isa = PBXGroup;
 			children = (
-				2CAFACE218553A2D005407DE /* mute.caf */,
 				2CAFACDF185536DE005407DE /* SKMuteSwitchDetector.h */,
 				2CAFACE0185536DE005407DE /* SKMuteSwitchDetector.m */,
 				2CAFACB31855341B005407DE /* SKAppDelegate.h */,
@@ -244,7 +241,6 @@
 				2CAFACBD1855341B005407DE /* Images.xcassets in Resources */,
 				2CAFACAF1855341B005407DE /* InfoPlist.strings in Resources */,
 				2CAFACB81855341B005407DE /* Main.storyboard in Resources */,
-				2CAFACE318553A2D005407DE /* mute.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +473,7 @@
 				2CAFACD51855341B005407DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CAFACD61855341B005407DE /* Build configuration list for PBXNativeTarget "MuteDetectorTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +482,7 @@
 				2CAFACD81855341B005407DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
