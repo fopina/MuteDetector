@@ -17,7 +17,7 @@ void MuteSoundPlaybackComplete(SystemSoundID  ssID,void* clientData){
 
     NSDictionary *soundData = CFBridgingRelease(clientData);
     SKMuteSwitchDetectorBlock andPerform = soundData[@"andPerform"];
-    SystemSoundID soundId = [soundData[@"soundId"] integerValue];
+    SystemSoundID soundId = [soundData[@"soundId"] unsignedIntValue];
 
     NSTimeInterval elapsed = [NSDate timeIntervalSinceReferenceDate] - [soundData[@"start"] doubleValue];
     andPerform(YES, elapsed < 0.2);
